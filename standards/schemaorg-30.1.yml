@@ -1,0 +1,61 @@
+standard: schemaorg-30.1
+source: https://github.com/schemaorg/schemaorg/tree/v30.1
+concepts:
+  job_posting:
+    objects:
+    - JobPosting
+    core_coverage: 0.75
+    extended_coverage: 0.5
+    core_missing_from_standard:
+    - id
+    crosswalk:
+      created_at: datePosted
+      employment_type: employmentType
+      company: hiringOrganization
+      location: jobLocation
+      salary_currency: salaryCurrency
+      name: title
+      description: description
+      url: url
+    standard_only:
+    - applicantLocationRequirements
+    - applicationContact
+    - baseSalary
+    - directApply
+    - educationRequirements
+    - eligibilityToWorkRequirement
+    - employerOverview
+    - employmentUnit
+    - estimatedSalary
+    - experienceInPlaceOfEducation
+    - experienceRequirements
+    - incentiveCompensation
+    - industry
+    - jobBenefits
+    - jobDuration
+    - jobImmediateStart
+    - jobLocationType
+    - jobStartDate
+    - occupationalCategory
+    - physicalRequirement
+    - qualifications
+    - relevantOccupation
+    - responsibilities
+    - securityClearanceRequirement
+    - sensoryRequirement
+    - skills
+    - specialCommitments
+    - totalJobOpenings
+    - validThrough
+    - workHours
+    - additionalType
+    - alternateName
+    - disambiguatingDescription
+    - identifier
+    - image
+    - mainEntityOfPage
+    - owner
+    - potentialAction
+    - sameAs
+    - subjectOf
+defines_unpublished: {}
