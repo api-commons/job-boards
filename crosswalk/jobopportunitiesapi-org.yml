@@ -1,0 +1,25 @@
+provider: jobopportunitiesapi-org
+apis_io: https://apis.io/providers/jobopportunitiesapi-org/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: title
+      description: description
+      employment_type: employment_type
+      company: company
+      location:
+      - city
+      - location
+      status: status
+      created_at: posted_at
+      source: source
+      url: apply_url
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/jobopportunitiesapi-org-openapi.json#GET /v1/jobs
+    - openapi/_original/jobopportunitiesapi-org-openapi.json#GET /v1/jobs/{id}

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/job-boards/main/schema/job_posting.json",
+  "title": "Job Posting",
+  "description": "The common job_posting in Job Boards, distilled from 19 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.737,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "job_id",
+        "jobPostingId"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.737,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "title",
+        "name",
+        "job_title"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.526,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "description",
+        "summary"
+      ]
+    },
+    "employment_type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.526,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "type",
+        "schedule",
+        "employment_type",
+        "employmentType"
+      ]
+    },
+    "company": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.474,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "company",
+        "companyName",
+        "company_name",
+        "employer"
+      ]
+    },
+    "location": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.474,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "location",
+        "city",
+        "locations"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.474,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.421,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "createdAt",
+        "posted_at",
+        "created_at",
+        "createTime",
+        "created"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "updatedAt",
+        "updated_at",
+        "update_time",
+        "updateTime"
+      ],
+      "format": "date-time"
+    },
+    "salary": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.263,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "salary"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.263,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "source"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.263,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "url",
+        "apply_url",
+        "link",
+        "job_url"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "job-boards",
+    "concept": "job_posting",
+    "providers": 19,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

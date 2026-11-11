@@ -1,0 +1,45 @@
+aid: common-job-boards
+name: Job Boards
+type: Common
+description: 'The common Job Boards vocabulary, distilled from the harvested OpenAPI of 33 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Job
+- Jobs
+- Job Boards
+- Job Search
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/job-boards/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-job-boards:job-boards
+  name: Common Job Boards Interface
+  description: The Job Boards interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/job-boards
+  tags:
+  - Job
+  - Jobs
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/job-boards/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/job-boards/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/job-boards/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: job_posting
+    url: https://raw.githubusercontent.com/api-commons/job-boards/main/schema/job_posting.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/job-boards/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

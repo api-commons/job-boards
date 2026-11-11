@@ -1,0 +1,17 @@
+provider: optilogic
+apis_io: https://apis.io/providers/optilogic/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - job
+    - jobs
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/optilogic-rest-api-openapi.json#DELETE /{workspace}/job/{jobKey}
+    - openapi/_original/optilogic-rest-api-openapi.json#GET /{workspace}/job/{jobKey}
+    - openapi/_original/optilogic-rest-api-openapi.json#GET /{workspace}/jobs
+    - openapi/_original/optilogic-rest-api-openapi.json#POST /{workspace}/job

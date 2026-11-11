@@ -1,0 +1,16 @@
+provider: worklittle
+apis_io: https://apis.io/providers/worklittle/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/worklittle-openapi.yaml#GET /business/jobs
+    - openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs
+    - openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs/{idOrSlug}
+    - openapi/_original/worklittle-openapi.yaml#GET /jobs
+    - openapi/_original/worklittle-openapi.yaml#GET /jobs/{id}

@@ -1,0 +1,18 @@
+provider: themuse
+apis_io: https://apis.io/providers/themuse/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: name
+      employment_type: type
+      company: company
+      location: locations
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/themuse-openapi.yml#GET /jobs
+    - openapi/_original/themuse-openapi.yml#GET /jobs/{id}

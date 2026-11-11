@@ -1,0 +1,23 @@
+provider: get-on-board
+apis_io: https://apis.io/providers/get-on-board/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: title
+      description: description
+      employment_type: type
+      status:
+      - state
+      - status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/get-on-board-openapi-original.yml#DELETE /api/v0/jobs/{id}
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/categories/{category_id}/jobs
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/companies/{company_id}/jobs
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs
+    - openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs/{id}

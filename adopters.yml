@@ -1,0 +1,118 @@
+context: job-boards
+generated: '2026-11-11'
+adopters:
+- provider: avito
+  apis_io: https://apis.io/providers/avito/
+  crosswalk: crosswalk/avito.yml
+  concepts:
+  - job_posting
+- provider: curatorsearch
+  apis_io: https://apis.io/providers/curatorsearch/
+  crosswalk: crosswalk/curatorsearch.yml
+  concepts:
+  - job_posting
+- provider: finch
+  apis_io: https://apis.io/providers/finch/
+  crosswalk: crosswalk/finch.yml
+  concepts:
+  - job_posting
+- provider: get-on-board
+  apis_io: https://apis.io/providers/get-on-board/
+  crosswalk: crosswalk/get-on-board.yml
+  concepts:
+  - job_posting
+- provider: getmattered
+  apis_io: https://apis.io/providers/getmattered/
+  crosswalk: crosswalk/getmattered.yml
+  concepts:
+  - job_posting
+- provider: google-cloud-batch
+  apis_io: https://apis.io/providers/google-cloud-batch/
+  crosswalk: crosswalk/google-cloud-batch.yml
+  concepts:
+  - job_posting
+- provider: google-cloud-scheduler
+  apis_io: https://apis.io/providers/google-cloud-scheduler/
+  crosswalk: crosswalk/google-cloud-scheduler.yml
+  concepts:
+  - job_posting
+- provider: google-cloud-talent-solution
+  apis_io: https://apis.io/providers/google-cloud-talent-solution/
+  crosswalk: crosswalk/google-cloud-talent-solution.yml
+  concepts:
+  - job_posting
+- provider: greenhouse
+  apis_io: https://apis.io/providers/greenhouse/
+  crosswalk: crosswalk/greenhouse.yml
+  concepts:
+  - job_posting
+- provider: ibm-quantum
+  apis_io: https://apis.io/providers/ibm-quantum/
+  crosswalk: crosswalk/ibm-quantum.yml
+  concepts:
+  - job_posting
+- provider: igaming-tools
+  apis_io: https://apis.io/providers/igaming-tools/
+  crosswalk: crosswalk/igaming-tools.yml
+  concepts:
+  - job_posting
+- provider: indeed
+  apis_io: https://apis.io/providers/indeed/
+  crosswalk: crosswalk/indeed.yml
+  concepts:
+  - job_posting
+- provider: jobopportunitiesapi-org
+  apis_io: https://apis.io/providers/jobopportunitiesapi-org/
+  crosswalk: crosswalk/jobopportunitiesapi-org.yml
+  concepts:
+  - job_posting
+- provider: midjourney
+  apis_io: https://apis.io/providers/midjourney/
+  crosswalk: crosswalk/midjourney.yml
+  concepts:
+  - job_posting
+- provider: nobueno
+  apis_io: https://apis.io/providers/nobueno/
+  crosswalk: crosswalk/nobueno.yml
+  concepts:
+  - job_posting
+- provider: nomad-health
+  apis_io: https://apis.io/providers/nomad-health/
+  crosswalk: crosswalk/nomad-health.yml
+  concepts:
+  - job_posting
+- provider: optilogic
+  apis_io: https://apis.io/providers/optilogic/
+  crosswalk: crosswalk/optilogic.yml
+  concepts:
+  - job_posting
+- provider: piknik-spot
+  apis_io: https://apis.io/providers/piknik-spot/
+  crosswalk: crosswalk/piknik-spot.yml
+  concepts:
+  - job_posting
+- provider: pinwheel
+  apis_io: https://apis.io/providers/pinwheel/
+  crosswalk: crosswalk/pinwheel.yml
+  concepts:
+  - job_posting
+- provider: reefapi
+  apis_io: https://apis.io/providers/reefapi/
+  crosswalk: crosswalk/reefapi.yml
+  concepts:
+  - job_posting
+- provider: themuse
+  apis_io: https://apis.io/providers/themuse/
+  crosswalk: crosswalk/themuse.yml
+  concepts:
+  - job_posting
+- provider: vehicles-dev-api
+  apis_io: https://apis.io/providers/vehicles-dev-api/
+  crosswalk: crosswalk/vehicles-dev-api.yml
+  concepts:
+  - job_posting
+- provider: worklittle
+  apis_io: https://apis.io/providers/worklittle/
+  crosswalk: crosswalk/worklittle.yml
+  concepts:
+  - job_posting

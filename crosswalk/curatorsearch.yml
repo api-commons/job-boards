@@ -1,0 +1,19 @@
+provider: curatorsearch
+apis_io: https://apis.io/providers/curatorsearch/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      name: title
+      description: description
+      location: location
+      salary: salary
+      source: source
+      url: url
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/curatorsearch-openapi.json#GET /api/jobs
+    - openapi/_original/curatorsearch-openapi.json#GET /api/jobs/{slug}

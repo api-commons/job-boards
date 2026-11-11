@@ -1,0 +1,20 @@
+provider: ibm-quantum
+apis_io: https://apis.io/providers/ibm-quantum/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      status:
+      - state
+      - status
+      created_at: created
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/ibm-quantum-openapi.json#DELETE /v1/jobs/{id}
+    - openapi/_original/ibm-quantum-openapi.json#GET /v1/jobs
+    - openapi/_original/ibm-quantum-openapi.json#GET /v1/jobs/{id}
+    - openapi/_original/ibm-quantum-openapi.json#POST /v1/jobs

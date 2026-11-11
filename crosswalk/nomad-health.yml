@@ -1,0 +1,13 @@
+provider: nomad-health
+apis_io: https://apis.io/providers/nomad-health/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/campaign/jobs
+    - openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/campaign/jobs

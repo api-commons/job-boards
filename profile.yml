@@ -1,0 +1,207 @@
+context: job-boards
+name: Job Boards
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Job
+  - Jobs
+  - Job Boards
+  - Job Search
+  - Careers
+  - Employment
+  - Labor Market
+  providers_with_harvested_openapi: 33
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  job_posting:
+    segments_seen:
+      jobs: 22
+      job: 2
+      vacancies: 1
+    providers_exposing: 23
+    providers_with_readable_schema: 19
+    operations:
+    - operation: GET collection
+      providers: 21
+      share: 0.913
+      tier: core
+    - operation: GET item
+      providers: 18
+      share: 0.783
+      tier: core
+    - operation: POST collection
+      providers: 13
+      share: 0.565
+      tier: core
+    - operation: DELETE item
+      providers: 10
+      share: 0.435
+      tier: extended
+    - operation: UPDATE item
+      providers: 10
+      share: 0.435
+      tier: extended
+    - operation: POST item
+      providers: 1
+      share: 0.043
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 14
+      share: 0.737
+      type: string
+      spellings:
+      - id
+      - uuid
+      - job_id
+      - jobPostingId
+    - name: name
+      tier: core
+      providers: 14
+      share: 0.737
+      type: string
+      spellings:
+      - title
+      - name
+      - job_title
+    - name: description
+      tier: core
+      providers: 10
+      share: 0.526
+      type: string
+      spellings:
+      - description
+      - summary
+    - name: employment_type
+      tier: core
+      providers: 10
+      share: 0.526
+      type: string
+      spellings:
+      - type
+      - schedule
+      - employment_type
+      - employmentType
+    - name: company
+      tier: extended
+      providers: 9
+      share: 0.474
+      type: string
+      spellings:
+      - company
+      - companyName
+      - company_name
+      - employer
+    - name: location
+      tier: extended
+      providers: 9
+      share: 0.474
+      type: string
+      spellings:
+      - location
+      - city
+      - locations
+    - name: status
+      tier: extended
+      providers: 9
+      share: 0.474
+      type: string
+      spellings:
+      - status
+      - state
+    - name: created_at
+      tier: extended
+      providers: 8
+      share: 0.421
+      type: string
+      spellings:
+      - createdAt
+      - posted_at
+      - created_at
+      - createTime
+      - created
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+      - update_time
+      - updateTime
+    - name: salary
+      tier: extended
+      providers: 5
+      share: 0.263
+      type: string
+      spellings:
+      - salary
+    - name: source
+      tier: extended
+      providers: 5
+      share: 0.263
+      type: string
+      spellings:
+      - source
+    - name: url
+      tier: extended
+      providers: 5
+      share: 0.263
+      type: string
+      spellings:
+      - url
+      - apply_url
+      - link
+      - job_url
+    long_tail_count: 278
+    long_tail_sample:
+    - category
+    - country
+    - error
+    - params
+    - salary_currency
+    - salary_max
+    - salary_min
+    - benefits
+    - closed_at
+    - closed_reason
+    - company_logo_url
+    - error_code
+    - expires_at
+    - is_active
+    - languages
+    - region
+    - salary_period
+    - seniority
+    - source_url
+    - tags
+    - user_id
+    - account_id
+    - address
+    - address_details
+    - addresses
+    - administrator_organization_type
+    - age
+    - age_preferences
+    - agency
+    - aggregations
+    - allocation_policy
+    - allow_calls
+    - allow_messages
+    - allowed_refreshes
+    - app_engine_http_target
+    - application_deadline
+    - application_result_status
+    - application_url
+    - apply_email
+    - apply_processing

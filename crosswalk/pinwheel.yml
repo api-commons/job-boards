@@ -1,0 +1,14 @@
+provider: pinwheel
+apis_io: https://apis.io/providers/pinwheel/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/pinwheel-pinwheel-api-openapi.yml#GET /jobs

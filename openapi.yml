@@ -1,0 +1,113 @@
+openapi: 3.1.0
+info:
+  title: Job Boards (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Job Boards interface, distilled from the harvested OpenAPI of 33 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /job-postings:
+    get:
+      operationId: listJobPostings
+      summary: List job postings
+      tags:
+      - Job Postings
+      x-commons-tier: core
+      x-commons-share: 0.913
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/JobPosting'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createJobPosting
+      summary: Create a job posting
+      tags:
+      - Job Postings
+      x-commons-tier: core
+      x-commons-share: 0.565
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /job-postings/{job_posting_id}:
+    parameters:
+    - $ref: '#/components/parameters/job_posting_id'
+    get:
+      operationId: getJobPosting
+      summary: Get a job posting
+      tags:
+      - Job Postings
+      x-commons-tier: core
+      x-commons-share: 0.783
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    delete:
+      operationId: deleteJobPosting
+      summary: Delete a job posting
+      tags:
+      - Job Postings
+      x-commons-tier: extended
+      x-commons-share: 0.435
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateJobPosting
+      summary: Update a job posting
+      tags:
+      - Job Postings
+      x-commons-tier: extended
+      x-commons-share: 0.435
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+components:
+  schemas:
+    JobPosting:
+      $ref: ./schema/job_posting.json
+  parameters:
+    job_posting_id:
+      name: job_posting_id
+      in: path
+      required: true
+      schema:
+        type: string

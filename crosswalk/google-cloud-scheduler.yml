@@ -1,0 +1,20 @@
+provider: google-cloud-scheduler
+apis_io: https://apis.io/providers/google-cloud-scheduler/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      name: name
+      description: description
+      employment_type: schedule
+      status: state
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /v1/projects/{project}/locations/{location}/jobs/{job}
+    - openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/jobs
+    - openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/jobs/{job}
+    - openapi/_original/openapi.yml#PATCH /v1/projects/{project}/locations/{location}/jobs/{job}
+    - openapi/_original/openapi.yml#POST /v1/projects/{project}/locations/{location}/jobs

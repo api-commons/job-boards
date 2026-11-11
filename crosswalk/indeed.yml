@@ -1,0 +1,27 @@
+provider: indeed
+apis_io: https://apis.io/providers/indeed/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: jobPostingId
+      name: title
+      description: description
+      employment_type: employmentType
+      company: employer
+      location: location
+      status: status
+      created_at: createdAt
+      updated_at: updatedAt
+      salary: salary
+      source: source
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/indeed-employer-api-openapi.yml#DELETE /v1/jobs/{jobPostingId}
+    - openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/jobs
+    - openapi/_original/indeed-employer-api-openapi.yml#GET /v1/jobs/{jobPostingId}
+    - openapi/_original/indeed-employer-api-openapi.yml#POST /v1/jobs
+    - openapi/_original/indeed-employer-api-openapi.yml#PUT /v1/jobs/{jobPostingId}

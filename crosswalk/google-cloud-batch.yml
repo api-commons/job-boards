@@ -1,0 +1,19 @@
+provider: google-cloud-batch
+apis_io: https://apis.io/providers/google-cloud-batch/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      name: name
+      status: status
+      created_at: createTime
+      updated_at: updateTime
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/batch-openapi.yml#DELETE /projects/{project}/locations/{location}/jobs/{jobId}
+    - openapi/_original/batch-openapi.yml#GET /projects/{project}/locations/{location}/jobs
+    - openapi/_original/batch-openapi.yml#GET /projects/{project}/locations/{location}/jobs/{jobId}
+    - openapi/_original/batch-openapi.yml#POST /projects/{project}/locations/{location}/jobs

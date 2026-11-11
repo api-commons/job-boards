@@ -1,0 +1,1324 @@
+{
+ "cohort_size": 33,
+ "unreadable": [
+  {
+   "spec": "piknik-spot/openapi/_original/piknik-spot-api-openapi.yaml",
+   "error": "mapping values are not allowed in this context"
+  }
+ ],
+ "concepts": {
+  "job_posting": {
+   "avito": {
+    "segments": [
+     "vacancies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "url": "string",
+     "uuid": "string",
+     "address": "string",
+     "administrator_organization_type": "integer",
+     "age": "object",
+     "age_preferences": "array",
+     "allow_calls": "boolean",
+     "allow_messages": "boolean",
+     "apply_processing": "object",
+     "billing_type": "string",
+     "bonuses": "array",
+     "business_area": "integer",
+     "citizenship": "array",
+     "construction_work_type": "array",
+     "contacts": "object",
+     "coordinates": "object",
+     "cuisine": "array",
+     "custom_employer_name": "string",
+     "delivery_method": "array",
+     "description": "string",
+     "driving_experience": "object",
+     "driving_license_category": "array",
+     "eatery_type": "array",
+     "education_level": "string",
+     "employee_id": "integer",
+     "employment": "string",
+     "experience": "object",
+     "facility_type": "array",
+     "food_production_shop_type": "array",
+     "grade": "string",
+     "html_tags": "boolean",
+     "image_url": "string",
+     "is_company_car": "boolean",
+     "is_side_job": "boolean",
+     "medical_book": "string",
+     "medical_specialization": "array",
+     "medical_specialization_ids": "array",
+     "name": "string",
+     "payout_frequency": "object",
+     "profession": "integer",
+     "registration_method": "array",
+     "retail_equipment_type": "array",
+     "retail_shop_type": "array",
+     "salary": "integer",
+     "salary_detail": "object",
+     "salary_range": "object",
+     "schedule": "object",
+     "shifts": "array",
+     "tools_availability": "string",
+     "vacancy_code": "string",
+     "vehicle_type": "integer",
+     "work_days_per_week": "array",
+     "work_format": "array",
+     "work_hours_per_day": "array",
+     "worker_class": "array",
+     "addressDetails": "object",
+     "businessArea": "string",
+     "companyName": "string",
+     "link": "string",
+     "title": "string",
+     "hierarchy": "object",
+     "location": "object",
+     "programs": "array",
+     "auto_renewal": "boolean",
+     "is_active": "boolean",
+     "params": "object",
+     "start_time": "string",
+     "update_time": "string",
+     "fields": "array",
+     "ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/avito-job-openapi.json#GET /job/v2/vacancies",
+     "openapi/_original/avito-job-openapi.json#GET /job/v2/vacancies/{vacancy_id}",
+     "openapi/_original/avito-job-openapi.json#POST /job/v1/vacancies",
+     "openapi/_original/avito-job-openapi.json#POST /job/v2/vacancies",
+     "openapi/_original/avito-job-openapi.json#POST /job/v2/vacancies/batch",
+     "openapi/_original/avito-job-openapi.json#PUT /job/v1/vacancies/{vacancy_id}"
+    ]
+   },
+   "curatorsearch": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "title": "string",
+     "institution": "string",
+     "location": [
+      "string",
+      "null"
+     ],
+     "category": "string",
+     "region": "string",
+     "salary": [
+      "string",
+      "null"
+     ],
+     "deadline": [
+      "string",
+      "null"
+     ],
+     "posted": "string",
+     "url": "string",
+     "description": [
+      "string",
+      "null"
+     ],
+     "source": "string"
+    },
+    "evidence": [
+     "openapi/_original/curatorsearch-openapi.json#GET /api/jobs",
+     "openapi/_original/curatorsearch-openapi.json#GET /api/jobs/{slug}"
+    ]
+   },
+   "finch": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "job_id": "string",
+     "job_url": "string",
+     "allowed_refreshes": "integer",
+     "remaining_refreshes": "integer",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/finch-openapi.json#POST /sandbox/jobs"
+    ]
+   },
+   "get-on-board": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "links": "object",
+     "title": "string",
+     "description": "string",
+     "projects": "string",
+     "category_id": "string",
+     "min_salary": "string",
+     "max_salary": "string",
+     "modality_id": "string",
+     "seniority_id": "string",
+     "remote_modality": "string",
+     "questions": "array",
+     "expand": "array",
+     "functions": "string",
+     "perks": "string",
+     "state": "string",
+     "location_region_ids": "array",
+     "location_country_ids": "array",
+     "location_city_ids": "array",
+     "company_shell_id": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/get-on-board-openapi-original.yml#DELETE /api/v0/jobs/{id}",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/categories/{category_id}/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/companies/{company_id}/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/jobs/{id}",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/search/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#GET /api/v0/tags/{tag_id}/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#POST /api/v0/jobs",
+     "openapi/_original/get-on-board-openapi-original.yml#PUT /api/v0/jobs/{id}"
+    ]
+   },
+   "getmattered": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "company": [
+      "string",
+      "null"
+     ],
+     "companyLogoUrl": [
+      "string",
+      "null"
+     ],
+     "companyDomain": [
+      "string",
+      "null"
+     ],
+     "location": [
+      "string",
+      "null"
+     ],
+     "salary": [
+      "string",
+      "null"
+     ],
+     "sourceUrl": [
+      "string",
+      "null"
+     ],
+     "title": "string",
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "id": "integer",
+     "jobMatchId": [
+      "integer",
+      "null"
+     ],
+     "status": "string",
+     "updatedAt": [
+      "string",
+      "null"
+     ],
+     "source": [
+      "string",
+      "null"
+     ],
+     "resolvedApplyUrl": [
+      "string",
+      "null"
+     ],
+     "linkedinApplyMethod": [
+      "string",
+      "null"
+     ],
+     "atsScoreCount": "integer",
+     "latestAtsScore": [
+      "integer",
+      "null"
+     ],
+     "preparationStatus": [
+      "string",
+      "null"
+     ],
+     "autoRetryStopped": "boolean",
+     "autoRetryStoppedReason": [
+      "string",
+      "null"
+     ],
+     "employerReceiptConfirmed": "boolean",
+     "submitEvidenceTier": "string",
+     "nextAutoRetryAt": [
+      "string",
+      "null"
+     ],
+     "statusDisplay": null,
+     "errorCode": [
+      "string",
+      "null"
+     ],
+     "applicationResultStatus": [
+      "string",
+      "null"
+     ],
+     "legitimacyTier": [
+      "string",
+      "null"
+     ],
+     "legitimacySignals": null,
+     "freshnessStatus": [
+      "string",
+      "null"
+     ],
+     "repostedCount": [
+      "integer",
+      "null"
+     ],
+     "lastRepostDate": [
+      "string",
+      "null"
+     ],
+     "description": "string",
+     "keywords": "array",
+     "requirements": "array",
+     "userId": "string",
+     "interviewPrepContent": [
+      "string",
+      "null"
+     ],
+     "interviewPrepStatus": [
+      "string",
+      "null"
+     ],
+     "careerPageData": [
+      "string",
+      "null"
+     ],
+     "careerPageStatus": [
+      "string",
+      "null"
+     ],
+     "compIntelligenceContent": [
+      "string",
+      "null"
+     ],
+     "compIntelligenceStatus": [
+      "string",
+      "null"
+     ],
+     "offerComparisonContent": [
+      "string",
+      "null"
+     ],
+     "offerComparisonKey": [
+      "string",
+      "null"
+     ],
+     "offerComparisonStatus": [
+      "string",
+      "null"
+     ],
+     "success": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/getmattered-openapi.json#DELETE /jobs/{id}",
+     "openapi/_original/getmattered-openapi.json#GET /jobs",
+     "openapi/_original/getmattered-openapi.json#GET /jobs/{id}",
+     "openapi/_original/getmattered-openapi.json#POST /jobs",
+     "openapi/_original/getmattered-openapi.json#PUT /jobs/{id}"
+    ]
+   },
+   "google-cloud-batch": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "uid": "string",
+     "priority": "string",
+     "taskGroups": "array",
+     "allocationPolicy": "object",
+     "status": "object",
+     "createTime": "string",
+     "updateTime": "string",
+     "logsPolicy": "object",
+     "done": "boolean",
+     "error": "object",
+     "response": "object",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/batch-openapi.yml#DELETE /projects/{project}/locations/{location}/jobs/{jobId}",
+     "openapi/_original/batch-openapi.yml#GET /projects/{project}/locations/{location}/jobs",
+     "openapi/_original/batch-openapi.yml#GET /projects/{project}/locations/{location}/jobs/{jobId}",
+     "openapi/_original/batch-openapi.yml#POST /projects/{project}/locations/{location}/jobs"
+    ]
+   },
+   "google-cloud-scheduler": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "description": "string",
+     "schedule": "string",
+     "timeZone": "string",
+     "httpTarget": "object",
+     "pubsubTarget": "object",
+     "appEngineHttpTarget": "object",
+     "state": "string",
+     "retryConfig": "object",
+     "lastAttemptTime": "string",
+     "scheduleTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /v1/projects/{project}/locations/{location}/jobs/{job}",
+     "openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/jobs",
+     "openapi/_original/openapi.yml#GET /v1/projects/{project}/locations/{location}/jobs/{job}",
+     "openapi/_original/openapi.yml#PATCH /v1/projects/{project}/locations/{location}/jobs/{job}",
+     "openapi/_original/openapi.yml#POST /v1/projects/{project}/locations/{location}/jobs"
+    ]
+   },
+   "google-cloud-talent-solution": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "company": "string",
+     "title": "string",
+     "description": "string",
+     "addresses": "array",
+     "employmentTypes": "array",
+     "compensationInfo": "object",
+     "postingExpireTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/tenants/{tenantId}/jobs",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}",
+     "openapi/_original/openapi.yml#PATCH /projects/{projectId}/tenants/{tenantId}/jobs/{jobId}",
+     "openapi/_original/openapi.yml#POST /projects/{projectId}/tenants/{tenantId}/jobs"
+    ]
+   },
+   "greenhouse": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs/{id}",
+     "openapi/_original/greenhouse-harvest-openapi.yml#PATCH /jobs/{id}",
+     "openapi/_original/greenhouse-ingestion-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-job-board-openapi.yml#GET /jobs",
+     "openapi/_original/greenhouse-job-board-openapi.yml#GET /jobs/{job_id}",
+     "openapi/_original/greenhouse-job-board-openapi.yml#POST /jobs/{job_id}"
+    ]
+   },
+   "ibm-quantum": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "backend": "string",
+     "state": "object",
+     "status": "string",
+     "params": "object",
+     "program": "object",
+     "created": "string",
+     "runtime": "string",
+     "cost": "integer",
+     "tags": "array",
+     "remote_storage": null,
+     "session_id": "string",
+     "user_id": "string",
+     "private": "boolean",
+     "estimated_running_time_seconds": "number",
+     "calibration_id": "string",
+     "value": "number",
+     "unit": "string",
+     "metric": "object",
+     "program_id": "string",
+     "log_level": "string"
+    },
+    "evidence": [
+     "openapi/_original/ibm-quantum-openapi.json#DELETE /v1/jobs/{id}",
+     "openapi/_original/ibm-quantum-openapi.json#GET /v1/jobs",
+     "openapi/_original/ibm-quantum-openapi.json#GET /v1/jobs/{id}",
+     "openapi/_original/ibm-quantum-openapi.json#POST /v1/jobs"
+    ]
+   },
+   "igaming-tools": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "source": "string",
+     "title": "string",
+     "company_name": "string",
+     "company": "object",
+     "location_country": "string",
+     "location_city": "string",
+     "city": "object",
+     "remote_mode": null,
+     "employment_type": null,
+     "seniority": null,
+     "igaming_segment": null,
+     "salary_min": "string",
+     "salary_max": "string",
+     "salary_currency": "string",
+     "salary_period": null,
+     "salary_is_disclosed": "boolean",
+     "posted_at": "string",
+     "last_seen_at": "string",
+     "status_public": null,
+     "closed_at": "string",
+     "closed_reason": null,
+     "apply_url": "string",
+     "source_url": "string",
+     "secondary_apply_url": "string",
+     "summary": "string",
+     "responsibilities": "array",
+     "requirements_must": "array",
+     "requirements_nice": "array",
+     "benefits": "array",
+     "skills": "array",
+     "skills_resolved": "array",
+     "languages": "array",
+     "licenses_relevant": "array",
+     "product_areas": "array",
+     "regulatory_role": "boolean",
+     "company_website": "string",
+     "company_logo_url": "string",
+     "company_size_bucket": "string",
+     "timezone_constraints": "string",
+     "salary_gross_or_net": "string",
+     "visa_sponsorship": "string",
+     "relocation_offered": "string",
+     "application_deadline": "string",
+     "apply_email": "string",
+     "discovered_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/igaming-tools-openapi.json#GET /api/v1/jobs/",
+     "openapi/_original/igaming-tools-openapi.json#GET /api/v1/jobs/{id}/",
+     "openapi/_original/igaming-tools-openapi.json#GET /api/v1/providers/{slug}/jobs/"
+    ]
+   },
+   "indeed": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "code": "string",
+     "message": "string",
+     "field": "string",
+     "jobPostingId": "string",
+     "title": "string",
+     "description": "string",
+     "location": "object",
+     "salary": "object",
+     "benefits": "array",
+     "qualifications": "array",
+     "workingHours": "object",
+     "employmentType": "string",
+     "remoteWorkPolicy": "string",
+     "employer": "object",
+     "source": "object",
+     "indeedApply": "object",
+     "status": "string",
+     "applicationUrl": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "expiresAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/indeed-employer-api-openapi.yml#DELETE /v1/jobs/{jobPostingId}",
+     "openapi/_original/indeed-employer-api-openapi.yml#GET /v1/employers/{employerId}/jobs",
+     "openapi/_original/indeed-employer-api-openapi.yml#GET /v1/jobs/{jobPostingId}",
+     "openapi/_original/indeed-employer-api-openapi.yml#POST /v1/jobs",
+     "openapi/_original/indeed-employer-api-openapi.yml#PUT /v1/jobs/{jobPostingId}"
+    ]
+   },
+   "jobopportunitiesapi-org": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "agency": "string",
+     "apply_url": "string",
+     "attribution": "string",
+     "canonical_url": "string",
+     "category": "string",
+     "category_confidence": [
+      "number",
+      "null"
+     ],
+     "city": "string",
+     "closed_at": [
+      "string",
+      "null"
+     ],
+     "closed_reason": [
+      "string",
+      "null"
+     ],
+     "company": "string",
+     "company_logo": "string",
+     "company_slug": "string",
+     "contract_category": "array",
+     "contract_category_confidence": "number",
+     "country": "string",
+     "country_confidence": "string",
+     "description": "string",
+     "description_length": "number",
+     "description_truncated": "boolean",
+     "employer_website": "string",
+     "employment_type": "string",
+     "engagement": "array",
+     "engagement_confidence": "number",
+     "expires_at": "string",
+     "field_sources": "object",
+     "first_seen_at": "string",
+     "has_description": "boolean",
+     "id": "string",
+     "language": [
+      "string",
+      "null"
+     ],
+     "language_basis": [
+      "string",
+      "null"
+     ],
+     "language_confidence": [
+      "number",
+      "null"
+     ],
+     "last_verified_at": "string",
+     "location": "string",
+     "posted_at": "string",
+     "posted_at_precision": "string",
+     "provider_type": "string",
+     "region": "string",
+     "relevance": "object",
+     "remote": "string",
+     "remote_inferred": "boolean",
+     "salary_currency": "string",
+     "salary_max": "number",
+     "salary_min": "number",
+     "salary_min_annual_eur": "number",
+     "salary_period": "string",
+     "salary_source": "string",
+     "seniority": "string",
+     "slug": "string",
+     "source": "string",
+     "source_requisition_id": "string",
+     "source_type": "string",
+     "status": "string",
+     "title": "string",
+     "upstream_expired_at": "string",
+     "working_schedule": "string",
+     "working_schedule_confidence": "number"
+    },
+    "evidence": [
+     "openapi/_original/jobopportunitiesapi-org-openapi.json#GET /v1/jobs",
+     "openapi/_original/jobopportunitiesapi-org-openapi.json#GET /v1/jobs/{id}"
+    ]
+   },
+   "midjourney": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "status": "string",
+     "progress": "integer",
+     "prompt": "string",
+     "parameters": "object",
+     "result": "object",
+     "error": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "completed_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/midjourney-image-generation-openapi.yml#GET /v1/jobs",
+     "openapi/_original/midjourney-image-generation-openapi.yml#GET /v1/jobs/{jobId}"
+    ]
+   },
+   "nobueno": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "object",
+     "country": "object",
+     "city": "object",
+     "updated_at": "string",
+     "technical_skills": "array",
+     "soft_skills": "array",
+     "languages": "array",
+     "working_years": "integer",
+     "salary": "string",
+     "salary_currency": "string",
+     "review": "string",
+     "location_type": "string",
+     "opportunity_type": "string",
+     "company_jobs": "string",
+     "created_by": "object",
+     "company": "object",
+     "created_at": "string",
+     "matches_count": "string",
+     "total_matches": "string",
+     "is_active": "boolean",
+     "description": "string",
+     "matches": "object",
+     "values": "string",
+     "personalities": "string",
+     "is_public": "boolean",
+     "talents": "string",
+     "compensation": "object",
+     "job_title": "string",
+     "job_role_title": "string",
+     "is_highlighted": "string"
+    },
+    "evidence": [
+     "openapi/_original/nobueno-openapi-original.json#DELETE /admin/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#DELETE /jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/companies/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/companies/{id}/jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /admin/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#GET /public/jobs",
+     "openapi/_original/nobueno-openapi-original.json#GET /public/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#PATCH /admin/jobs/{id}",
+     "openapi/_original/nobueno-openapi-original.json#PATCH /jobs/{id}"
+    ]
+   },
+   "nomad-health": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/nomad-health-platform-openapi.yml#GET /api/v1/campaign/jobs",
+     "openapi/_original/nomad-health-platform-swagger-original.json#GET /api/v1/campaign/jobs"
+    ]
+   },
+   "optilogic": {
+    "segments": [
+     "job",
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "jobKey": "string",
+     "submittedDatetime": "string",
+     "startDatetime": "string",
+     "endDatetime": "string",
+     "runTime": "string",
+     "status": "string",
+     "phase": "string",
+     "jobInfo": "object",
+     "result": "string",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/optilogic-rest-api-openapi.json#DELETE /{workspace}/job/{jobKey}",
+     "openapi/_original/optilogic-rest-api-openapi.json#GET /{workspace}/job/{jobKey}",
+     "openapi/_original/optilogic-rest-api-openapi.json#GET /{workspace}/jobs",
+     "openapi/_original/optilogic-rest-api-openapi.json#POST /{workspace}/job"
+    ]
+   },
+   "piknik-spot": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/piknik-spot-openapi.json#DELETE /jobs/{jobId}",
+     "openapi/_original/piknik-spot-openapi.json#GET /discussions/categories/{slug}/jobs",
+     "openapi/_original/piknik-spot-openapi.json#GET /jobs",
+     "openapi/_original/piknik-spot-openapi.json#GET /jobs/{jobId}",
+     "openapi/_original/piknik-spot-openapi.json#GET /v2/associations/{slug}/jobs",
+     "openapi/_original/piknik-spot-openapi.json#POST /jobs",
+     "openapi/_original/piknik-spot-openapi.json#PUT /jobs/{jobId}",
+     "openapi/_original/piknik-spot-openapi.yml#DELETE /jobs/{jobId}",
+     "openapi/_original/piknik-spot-openapi.yml#GET /discussions/categories/{slug}/jobs",
+     "openapi/_original/piknik-spot-openapi.yml#GET /jobs",
+     "openapi/_original/piknik-spot-openapi.yml#GET /jobs/{jobId}",
+     "openapi/_original/piknik-spot-openapi.yml#GET /v2/associations/{slug}/jobs"
+    ]
+   },
+   "pinwheel": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": null,
+     "timestamp": "string",
+     "outcome": null,
+     "error_code": "string",
+     "error_type": "string",
+     "link_token_id": "string",
+     "params": null,
+     "account_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/pinwheel-pinwheel-api-openapi.yml#GET /jobs"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "jobs",
+     "job"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "employer_id": "string",
+     "page": "string",
+     "cursor": "string",
+     "page_size": "string",
+     "page_cursor": "string",
+     "jobkey": "string",
+     "country": "string",
+     "limit": "string",
+     "city": "string",
+     "category": "string",
+     "type": "string",
+     "sort": "string",
+     "id": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /glassdoor/v1/employer/jobs",
+     "openapi/_original/reefapi-openapi.json#POST /indeed/v1/job",
+     "openapi/_original/reefapi-openapi.json#POST /shixian/v1/job",
+     "openapi/_original/reefapi-openapi.json#POST /shixian/v1/jobs"
+    ]
+   },
+   "themuse": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "page": "integer",
+     "page_count": "integer",
+     "items_per_page": "integer",
+     "total": "integer",
+     "took": "integer",
+     "timed_out": "boolean",
+     "aggregations": "array",
+     "id": "integer",
+     "name": "string",
+     "contents": "string",
+     "type": "string",
+     "publication_date": "string",
+     "short_name": "string",
+     "model_type": "string",
+     "locations": "array",
+     "categories": "array",
+     "levels": "array",
+     "tags": "array",
+     "refs": "object",
+     "company": "object"
+    },
+    "evidence": [
+     "openapi/_original/themuse-openapi.yml#GET /jobs",
+     "openapi/_original/themuse-openapi.yml#GET /jobs/{id}"
+    ]
+   },
+   "vehicles-dev-api": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "company": "string",
+     "id": "string",
+     "title": "string"
+    },
+    "evidence": [
+     "openapi/_original/vehicles-dev-api-openapi.json#GET /v1/employment/jobs"
+    ]
+   },
+   "worklittle": {
+    "segments": [
+     "jobs"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/worklittle-openapi.yaml#GET /business/jobs",
+     "openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs",
+     "openapi/_original/worklittle-openapi.yaml#GET /job-boards/{company}/jobs/{idOrSlug}",
+     "openapi/_original/worklittle-openapi.yaml#GET /jobs",
+     "openapi/_original/worklittle-openapi.yaml#GET /jobs/{id}",
+     "openapi/_original/worklittle-openapi.yaml#PATCH /business/jobs/{id}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "avito",
+    "bls-gov",
+    "comeet",
+    "coresignal",
+    "curatorsearch",
+    "dant3-net",
+    "finch",
+    "get-on-board",
+    "getmattered",
+    "google-cloud-batch",
+    "google-cloud-scheduler",
+    "google-cloud-talent-solution",
+    "greenhouse",
+    "ibm-quantum",
+    "igaming-tools",
+    "indeed",
+    "jobopportunitiesapi-org",
+    "linkedin",
+    "midjourney",
+    "nobueno",
+    "nomad-health",
+    "optilogic",
+    "piknik-spot",
+    "pinwheel",
+    "reefapi",
+    "remote-com",
+    "robottraining-jobs",
+    "themuse",
+    "vehicles-dev-api",
+    "wadifa-info",
+    "workiz",
+    "worklittle"
+   ],
+   "kebab-case": [
+    "avito",
+    "curatorsearch",
+    "finch",
+    "getmattered",
+    "jobopportunitiesapi-org",
+    "nobueno",
+    "nomad-health",
+    "optilogic",
+    "piknik-spot",
+    "reefapi",
+    "vehicles-dev-api",
+    "wadifa-info",
+    "worklittle"
+   ],
+   "snake_case": [
+    "avito",
+    "coresignal",
+    "get-on-board",
+    "greenhouse",
+    "ibm-quantum",
+    "nobueno",
+    "nomad-health",
+    "piknik-spot",
+    "pinwheel",
+    "reefapi",
+    "remote-com"
+   ],
+   "other": [
+    "avito",
+    "google-cloud-scheduler",
+    "google-cloud-talent-solution",
+    "linkedin",
+    "piknik-spot",
+    "reefapi",
+    "robottraining-jobs"
+   ],
+   "camelCase": [
+    "avito",
+    "google-cloud-batch",
+    "linkedin",
+    "optilogic",
+    "reefapi",
+    "workiz"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "avito",
+    "bls-gov",
+    "comeet",
+    "curatorsearch",
+    "dant3-net",
+    "finch",
+    "get-on-board",
+    "getmattered",
+    "greenhouse",
+    "ibm-quantum",
+    "igaming-tools",
+    "indeed",
+    "jobopportunitiesapi-org",
+    "linkedin",
+    "midjourney",
+    "nobueno",
+    "optilogic",
+    "piknik-spot",
+    "pinwheel",
+    "remote-com",
+    "themuse",
+    "vehicles-dev-api",
+    "wadifa-info",
+    "workiz",
+    "worklittle"
+   ],
+   "snake_case": [
+    "avito",
+    "finch",
+    "get-on-board",
+    "greenhouse",
+    "ibm-quantum",
+    "igaming-tools",
+    "jobopportunitiesapi-org",
+    "nobueno",
+    "piknik-spot",
+    "pinwheel",
+    "remote-com",
+    "themuse",
+    "vehicles-dev-api",
+    "workiz",
+    "worklittle"
+   ],
+   "camelCase": [
+    "avito",
+    "getmattered",
+    "google-cloud-batch",
+    "indeed",
+    "linkedin",
+    "nobueno",
+    "optilogic",
+    "piknik-spot"
+   ],
+   "other": [
+    "linkedin",
+    "nobueno"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "avito",
+    "curatorsearch",
+    "dant3-net",
+    "finch",
+    "getmattered",
+    "ibm-quantum",
+    "jobopportunitiesapi-org",
+    "midjourney",
+    "optilogic",
+    "piknik-spot",
+    "pinwheel",
+    "vehicles-dev-api",
+    "wadifa-info",
+    "worklittle"
+   ],
+   "offset": [
+    "avito",
+    "finch",
+    "getmattered",
+    "ibm-quantum",
+    "jobopportunitiesapi-org",
+    "midjourney",
+    "piknik-spot",
+    "vehicles-dev-api",
+    "workiz",
+    "worklittle"
+   ],
+   "page": [
+    "avito",
+    "get-on-board",
+    "getmattered",
+    "greenhouse",
+    "nobueno",
+    "piknik-spot",
+    "remote-com",
+    "themuse"
+   ],
+   "cursor": [
+    "avito",
+    "getmattered",
+    "igaming-tools",
+    "jobopportunitiesapi-org",
+    "pinwheel",
+    "worklittle"
+   ],
+   "per_page": [
+    "avito",
+    "get-on-board",
+    "greenhouse",
+    "nobueno"
+   ],
+   "page_size": [
+    "google-cloud-batch",
+    "igaming-tools",
+    "piknik-spot",
+    "remote-com"
+   ],
+   "after": [
+    "indeed",
+    "jobopportunitiesapi-org"
+   ],
+   "size": [
+    "piknik-spot",
+    "themuse"
+   ],
+   "starting_after": [
+    "getmattered"
+   ],
+   "page_token": [
+    "google-cloud-batch"
+   ],
+   "next": [
+    "ibm-quantum"
+   ],
+   "count": [
+    "linkedin"
+   ],
+   "start": [
+    "linkedin"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "avito",
+    "coresignal",
+    "curatorsearch",
+    "get-on-board",
+    "getmattered",
+    "google-cloud-batch",
+    "google-cloud-scheduler",
+    "greenhouse",
+    "ibm-quantum",
+    "igaming-tools",
+    "jobopportunitiesapi-org",
+    "nobueno",
+    "nomad-health",
+    "optilogic",
+    "piknik-spot",
+    "themuse",
+    "vehicles-dev-api",
+    "worklittle"
+   ],
+   "camelCase": [
+    "avito",
+    "bls-gov",
+    "getmattered",
+    "google-cloud-batch",
+    "google-cloud-talent-solution",
+    "indeed",
+    "linkedin",
+    "midjourney",
+    "optilogic",
+    "piknik-spot",
+    "vehicles-dev-api",
+    "worklittle"
+   ],
+   "snake_case": [
+    "avito",
+    "comeet",
+    "finch",
+    "get-on-board",
+    "greenhouse",
+    "linkedin",
+    "nobueno",
+    "nomad-health",
+    "pinwheel",
+    "remote-com"
+   ],
+   "PascalCase": [
+    "linkedin",
+    "workiz"
+   ],
+   "other": [
+    "linkedin",
+    "workiz"
+   ]
+  },
+  "property": {
+   "lower": [
+    "avito",
+    "curatorsearch",
+    "finch",
+    "get-on-board",
+    "getmattered",
+    "google-cloud-batch",
+    "google-cloud-scheduler",
+    "google-cloud-talent-solution",
+    "ibm-quantum",
+    "igaming-tools",
+    "indeed",
+    "jobopportunitiesapi-org",
+    "midjourney",
+    "nobueno",
+    "optilogic",
+    "pinwheel",
+    "reefapi",
+    "themuse",
+    "vehicles-dev-api"
+   ],
+   "snake_case": [
+    "avito",
+    "finch",
+    "get-on-board",
+    "ibm-quantum",
+    "igaming-tools",
+    "jobopportunitiesapi-org",
+    "midjourney",
+    "nobueno",
+    "pinwheel",
+    "reefapi",
+    "themuse"
+   ],
+   "camelCase": [
+    "avito",
+    "getmattered",
+    "google-cloud-batch",
+    "google-cloud-scheduler",
+    "google-cloud-talent-solution",
+    "indeed",
+    "optilogic"
+   ]
+  }
+ }
+}

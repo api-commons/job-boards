@@ -1,0 +1,26 @@
+provider: nobueno
+apis_io: https://apis.io/providers/nobueno/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name:
+      - title
+      - job_title
+      description: description
+      company: company
+      location: city
+      created_at: created_at
+      updated_at: updated_at
+      salary: salary
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/nobueno-openapi-original.json#DELETE /admin/jobs/{id}
+    - openapi/_original/nobueno-openapi-original.json#DELETE /jobs/{id}
+    - openapi/_original/nobueno-openapi-original.json#GET /admin/companies/jobs/{id}
+    - openapi/_original/nobueno-openapi-original.json#GET /admin/companies/{id}/jobs
+    - openapi/_original/nobueno-openapi-original.json#GET /admin/jobs

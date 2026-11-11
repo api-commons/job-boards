@@ -1,0 +1,15 @@
+provider: vehicles-dev-api
+apis_io: https://apis.io/providers/vehicles-dev-api/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties:
+      id: id
+      name: title
+      company: company
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/vehicles-dev-api-openapi.json#GET /v1/employment/jobs

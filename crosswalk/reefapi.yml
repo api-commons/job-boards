@@ -1,0 +1,19 @@
+provider: reefapi
+apis_io: https://apis.io/providers/reefapi/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    - job
+    properties:
+      id: id
+      employment_type: type
+      location: city
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /glassdoor/v1/employer/jobs
+    - openapi/_original/reefapi-openapi.json#POST /indeed/v1/job
+    - openapi/_original/reefapi-openapi.json#POST /shixian/v1/job
+    - openapi/_original/reefapi-openapi.json#POST /shixian/v1/jobs

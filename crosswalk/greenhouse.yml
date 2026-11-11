@@ -1,0 +1,16 @@
+provider: greenhouse
+apis_io: https://apis.io/providers/greenhouse/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs
+    - openapi/_original/greenhouse-harvest-openapi.yml#GET /jobs/{id}
+    - openapi/_original/greenhouse-harvest-openapi.yml#PATCH /jobs/{id}
+    - openapi/_original/greenhouse-ingestion-openapi.yml#GET /jobs
+    - openapi/_original/greenhouse-job-board-openapi.yml#GET /jobs

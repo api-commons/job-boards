@@ -1,0 +1,16 @@
+provider: piknik-spot
+apis_io: https://apis.io/providers/piknik-spot/
+context: job-boards
+generated: '2026-11-11'
+concepts:
+  job_posting:
+    path_segment:
+    - jobs
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/piknik-spot-openapi.json#DELETE /jobs/{jobId}
+    - openapi/_original/piknik-spot-openapi.json#GET /discussions/categories/{slug}/jobs
+    - openapi/_original/piknik-spot-openapi.json#GET /jobs
+    - openapi/_original/piknik-spot-openapi.json#GET /jobs/{jobId}
+    - openapi/_original/piknik-spot-openapi.json#GET /v2/associations/{slug}/jobs

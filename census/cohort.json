@@ -1,0 +1,258 @@
+[
+ {
+  "slug": "avito",
+  "specs": [
+   "openapi/_original/avito-accounts-hierarchy-openapi.json",
+   "openapi/_original/avito-ads-openapi.json",
+   "openapi/_original/avito-auction-openapi.json",
+   "openapi/_original/avito-auth-openapi.json",
+   "openapi/_original/avito-autoload-openapi.json",
+   "openapi/_original/avito-autostrategy-openapi.json",
+   "openapi/_original/avito-autoteka-openapi.json",
+   "openapi/_original/avito-avito-promo-openapi.json",
+   "openapi/_original/avito-calltracking-openapi.json",
+   "openapi/_original/avito-cpa-openapi.json",
+   "openapi/_original/avito-cpxpromo-openapi.json",
+   "openapi/_original/avito-delivery-sandbox-openapi.json",
+   "openapi/_original/avito-item-openapi.json",
+   "openapi/_original/avito-job-openapi.json",
+   "openapi/_original/avito-messenger-openapi.json",
+   "openapi/_original/avito-order-management-openapi.json",
+   "openapi/_original/avito-promotion-openapi.json",
+   "openapi/_original/avito-ratings-openapi.json",
+   "openapi/_original/avito-realty-reports-openapi.json",
+   "openapi/_original/avito-sbc-gateway-openapi.json",
+   "openapi/_original/avito-stock-management-openapi.json",
+   "openapi/_original/avito-str-openapi.json",
+   "openapi/_original/avito-tariff-openapi.json",
+   "openapi/_original/avito-trxpromo-openapi.json",
+   "openapi/_original/avito-user-openapi.json"
+  ]
+ },
+ {
+  "slug": "bls-gov",
+  "specs": [
+   "openapi/_original/bls-public-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "comeet",
+  "specs": [
+   "openapi/_original/comeet-careers-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coresignal",
+  "specs": [
+   "openapi/_original/coresignal-multi-source-company-api-openapi.yml",
+   "openapi/_original/coresignal-multi-source-employee-api-openapi.yml",
+   "openapi/_original/coresignal-multi-source-jobs-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "curatorsearch",
+  "specs": [
+   "openapi/_original/curatorsearch-openapi.json"
+  ]
+ },
+ {
+  "slug": "dant3-net",
+  "specs": [
+   "openapi/_original/dant3-net-machine-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "finch",
+  "specs": [
+   "openapi/_original/finch-openapi.json"
+  ]
+ },
+ {
+  "slug": "get-on-board",
+  "specs": [
+   "openapi/_original/get-on-board-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "getmattered",
+  "specs": [
+   "openapi/_original/getmattered-openapi.json"
+  ]
+ },
+ {
+  "slug": "google-cloud-batch",
+  "specs": [
+   "openapi/_original/batch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-scheduler",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-talent-solution",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "greenhouse",
+  "specs": [
+   "openapi/_original/greenhouse-harvest-openapi.yml",
+   "openapi/_original/greenhouse-ingestion-openapi.yml",
+   "openapi/_original/greenhouse-job-board-openapi.yml",
+   "openapi/_original/greenhouse-onboarding-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ibm-quantum",
+  "specs": [
+   "openapi/_original/ibm-quantum-openapi.json"
+  ]
+ },
+ {
+  "slug": "igaming-tools",
+  "specs": [
+   "openapi/_original/igaming-tools-openapi.json"
+  ]
+ },
+ {
+  "slug": "indeed",
+  "specs": [
+   "openapi/_original/indeed-employer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jobopportunitiesapi-org",
+  "specs": [
+   "openapi/_original/jobopportunitiesapi-org-openapi.json"
+  ]
+ },
+ {
+  "slug": "lifemine",
+  "specs": [
+   "openapi/_original/lifemine-wp-json-index.json"
+  ]
+ },
+ {
+  "slug": "linkedin",
+  "specs": [
+   "openapi/_original/linkedin-compliance-events.yml",
+   "openapi/_original/linkedin-learning-activity-reports.yml",
+   "openapi/_original/linkedin-marketing-audience-insights.yml",
+   "openapi/_original/linkedin-marketing-audience.yml",
+   "openapi/_original/linkedin-marketing-campaigns.yml",
+   "openapi/_original/linkedin-marketing-community.yml",
+   "openapi/_original/linkedin-marketing-content.yml",
+   "openapi/_original/linkedin-marketing-conversions.yml",
+   "openapi/_original/linkedin-marketing-leads.yml",
+   "openapi/_original/linkedin-marketing-media-planning.yml",
+   "openapi/_original/linkedin-marketing-reporting-roi.yml",
+   "openapi/_original/linkedin-regulations-data-portability.yml",
+   "openapi/_original/linkedin-regulatory-ads-transparency.yml",
+   "openapi/_original/linkedin-sales-navigator.yml",
+   "openapi/_original/linkedin-talent-job-posting.yml",
+   "openapi/_original/linkedin-talent-learning-parent-application.yml",
+   "openapi/_original/linkedin-talent-recruiter-system-connect.yml"
+  ]
+ },
+ {
+  "slug": "midjourney",
+  "specs": [
+   "openapi/_original/midjourney-image-generation-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nobueno",
+  "specs": [
+   "openapi/_original/nobueno-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nomad-health",
+  "specs": [
+   "openapi/_original/nomad-health-api-openapi.yml",
+   "openapi/_original/nomad-health-api-swagger-original.json",
+   "openapi/_original/nomad-health-platform-openapi.yml",
+   "openapi/_original/nomad-health-platform-swagger-original.json"
+  ]
+ },
+ {
+  "slug": "optilogic",
+  "specs": [
+   "openapi/_original/optilogic-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "piknik-spot",
+  "specs": [
+   "openapi/_original/piknik-spot-api-openapi.yaml",
+   "openapi/_original/piknik-spot-openapi.json",
+   "openapi/_original/piknik-spot-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pinwheel",
+  "specs": [
+   "openapi/_original/pinwheel-pinwheel-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reefapi",
+  "specs": [
+   "openapi/_original/reefapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "remote-com",
+  "specs": [
+   "openapi/_original/remote-benefits-api-openapi.yml",
+   "openapi/_original/remote-companies-api-openapi.yml",
+   "openapi/_original/remote-contractors-api-openapi.yml",
+   "openapi/_original/remote-employments-api-openapi.yml",
+   "openapi/_original/remote-files-api-openapi.yml",
+   "openapi/_original/remote-oauth-api-openapi.yml",
+   "openapi/_original/remote-payroll-billing-api-openapi.yml",
+   "openapi/_original/remote-time-attendance-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "robottraining-jobs",
+  "specs": [
+   "openapi/_original/robottraining-jobs-openapi.json"
+  ]
+ },
+ {
+  "slug": "themuse",
+  "specs": [
+   "openapi/_original/themuse-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vehicles-dev-api",
+  "specs": [
+   "openapi/_original/vehicles-dev-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "wadifa-info",
+  "specs": [
+   "openapi/_original/wadifa-info-openapi.json",
+   "openapi/_original/wadifa-info-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workiz",
+  "specs": [
+   "openapi/_original/workiz-openapi.yml"
+  ]
+ },
+ {
+  "slug": "worklittle",
+  "specs": [
+   "openapi/_original/worklittle-openapi.yaml"
+  ]
+ }
+]
