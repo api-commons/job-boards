@@ -22,7 +22,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- Job postings agree on id, name, description and employment_type; company and location reach 47%, and salary falls below 30% -- most boards syndicate pay as free text, if at all.
+- Job postings agree on id, name, description and employment_type; company and location reach 47%, and the salary range falls below 30%.
 
 ## Artifacts
 
